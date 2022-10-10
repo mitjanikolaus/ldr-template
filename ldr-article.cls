@@ -105,14 +105,14 @@
   {\bfseries}
   {\thesection}{1em}{}
 \titleformat{\subsubsection}
-  {\normalsansfont\bfseries\itshape}
+  {\bfseries\itshape}
   {\thesection}{1em}{}
 \titleformat{\paragraph}[runin]
 {\bfseries}
 {\thesection}{1em}{}[.]
 \titlespacing*{\paragraph}{1.5em}{0em}{\wordsep}
 \titleformat{\subparagraph}[runin]
-{\normalsansfont\bfseries\itshape}
+{\bfseries\itshape}
 {\thesection}{1em}{}[.]
 \titlespacing*{\subparagraph}{1.5em}{0em}{\wordsep}
 
