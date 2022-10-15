@@ -44,7 +44,6 @@
 \fancyhf{}
 \fancyhead[C]{\titlepagefontsize\textit{Language Development Research}}
 \fancyhead[R]{\titlepagefontsize \thepage}
-\fancyfoot[C]{\titlepagefontsize Volume X, Issue Y, 31 December 2022}
 \renewcommand{\headrulewidth}{0pt}
 % Define the same header and footer for title page
 \fancypagestyle{plain}{%
