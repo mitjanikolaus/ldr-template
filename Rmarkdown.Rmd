@@ -37,7 +37,7 @@ if (!file.exists(rmarkdown::metadata$csl)) {
     
 \keywords{keywords go here; use 3-5 keywords; semicolons in between; same font as abstract; authors designate their own keywords rather than choosing from a menu.}
 \correspondingauthor{Jason Pierce, Department of Psychology, University of Rugby, Spaceman Park, Rugby, CV21 1XX, UK. Email: Jason.Pierce@Rugby.ac.uk.}
-\orcid{https://orcid.org/0000-1234-5678-9999}
+\orcids{https://orcid.org/0000-1234-5678-9999;https://orcid.org/0000-5678-1234-9999}
 \citationinfo{Other, A.N., Kramer, W.K., \& Pierce, J. (2022). Article title goes here. \textit{Language Development Research, 2}(1), XX–XX. \url{https://doi.org/10.34xxx/xxxx-xxxx}}
 
 
