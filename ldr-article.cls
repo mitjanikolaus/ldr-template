@@ -94,7 +94,7 @@
 % for a single ORCID
 \newcommand{\orcid}[1]{\titlepagefontsize\textbf{ORCID ID: }\url{#1} \\[\baselineskip]}
 
-% for a multiple ORCIDs
+% for a multiple ORCIDs delimited by semicolon ;
 \newcommand{\orcids}[1]{\titlepagefontsize\textbf{ORCID IDs: }\orcidlist{#1} \\[\baselineskip]}
 \NewDocumentCommand{\orcidlist}{ >{\SplitList{;}} m }{%
   \ProcessList{#1}{\orciditem}%
