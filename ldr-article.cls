@@ -100,7 +100,7 @@
   \ProcessList{#1}{\orciditem}%
 }
 \NewDocumentCommand{\orciditem}{m}{%
-  \url{#1} % a space follows
+  \url{#1}; % a space follows
 }
 
 \newcommand{\citationinfo}[1]{\titlepagefontsize\textbf{Citation: }#1 \\[\baselineskip]%
