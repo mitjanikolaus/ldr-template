@@ -17,6 +17,9 @@
 % Support for different font colors
 \usepackage{xcolor}
 
+% Allow use of SplitList for \orcids command
+\usepackage{xparse}
+
 % Redefine the page margins
 \RequirePackage[left=2.5cm,right=2.5cm,bottom=4cm,top=1.5cm,headsep=2.5cm,includehead]{geometry}
 
@@ -88,7 +91,17 @@
 
 \newcommand{\correspondingauthor}[1]{\titlepagefontsize\textbf{Corresponding author: }#1 \\[\baselineskip]}
 
+% for a single ORCID
 \newcommand{\orcid}[1]{\titlepagefontsize\textbf{ORCID ID: }\url{#1} \\[\baselineskip]}
+
+% for a multiple ORCIDs
+\newcommand{\orcids}[1]{\titlepagefontsize\textbf{ORCID IDs: }\orcidlist{#1} \\[\baselineskip]}
+\NewDocumentCommand{\orcidlist}{ >{\SplitList{;}} m }{%
+  \ProcessList{#1}{\orciditem}%
+}
+\NewDocumentCommand{\orciditem}{m}{%
+  \url{#1} % a space follows
+}
 
 \newcommand{\citationinfo}[1]{\titlepagefontsize\textbf{Citation: }#1 \\[\baselineskip]%
 % The end of title page is after the end of the citation info. We add a page break and return to the normal font size
