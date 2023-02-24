@@ -98,9 +98,19 @@
 \newcommand{\orcids}[1]{\titlepagefontsize\textbf{ORCID IDs: }\orcidlist{#1} \\[\baselineskip]}
 \NewDocumentCommand{\orcidlist}{ >{\SplitList{;}} m }{%
   \ProcessList{#1}{\orciditem}%
+  \firstitemtrue
 }
-\NewDocumentCommand{\orciditem}{m}{%
-  \url{#1}; % a space follows
+
+% Add semicolons before each new item except the first one
+\newif\iffirstitem
+\firstitemtrue
+\newcommand\orciditem[1]{%
+  \iffirstitem
+    \firstitemfalse
+  \else
+    ; %
+  \fi
+  \url{#1}
 }
 
 \newcommand{\citationinfo}[1]{\titlepagefontsize\textbf{Citation: }#1 \\[\baselineskip]%
