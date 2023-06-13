@@ -1,5 +1,5 @@
 % This is the LaTex style file for the Journal "Language Development Research"
-% version: 1.0 (2022)
+% version: 1.1 (2023)
 % Author: Mitja Nikolaus (mitja.nikolaus@posteo.de)
 % The repository for the source files can be found at
 %
@@ -147,8 +147,11 @@
 
 % Define figure and table caption styles
 \usepackage{caption}
-\DeclareCaptionFont{captionfont}{\normalsansfont}
-\captionsetup[figure]{textfont={it,bf},labelfont={bf},labelsep=period,font=captionfont}
+\DeclareCaptionFont{captionfont}{\normalfont}
+\captionsetup[figure]{singlelinecheck=off, margin={5pt,0pt}, textfont={it,bf},labelfont={bf},labelsep=period,font=captionfont}
+\captionsetup[table]{singlelinecheck=off, margin={5pt,0pt}, textfont={it,bf},labelfont={bf},labelsep=period,font=captionfont}
+
+
 \renewcommand{\figurename}{Figure}
 
 % Use biblatex for reference management

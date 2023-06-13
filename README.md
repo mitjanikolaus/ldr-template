@@ -9,3 +9,7 @@ The template is also available as an [overleaf template](https://www.overleaf.co
 ## Rmd
 
 To create your own article using Rmarkdown, clone this project and edit [Rmarkdown.Rmd](Rmarkdown.Rmd) using RStudio. Then press *Knit* or *Knit to PDF* to generate Rmarkdown.pdf. 
+
+## Acknowledgements
+
+Thanks to Matt Hilton for fixing the formatting of captions (version 1.1)!
