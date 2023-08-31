@@ -95,7 +95,7 @@
 \newcommand{\orcid}[1]{\titlepagefontsize\textbf{ORCID ID: }\url{#1} \\[\baselineskip]}
 
 % for a multiple ORCIDs delimited by semicolon ;
-\newcommand{\orcids}[1]{\titlepagefontsize\textbf{ORCID IDs: }\orcidlist{#1} \\[\baselineskip]}
+\newcommand{\orcids}[1]{\titlepagefontsize{\raggedright\textbf{ORCID IDs: }\orcidlist{#1} \\[\baselineskip]}}
 \NewDocumentCommand{\orcidlist}{ >{\SplitList{;}} m }{%
   \ProcessList{#1}{\orciditem}%
   \firstitemtrue
@@ -107,11 +107,9 @@
 \newcommand\orciditem[1]{%
   \iffirstitem
     \firstitemfalse
-  \else
-    ; %
+  \else; %
   \fi
-  \url{#1}
-}
+  \url{#1}}
 
 \newcommand{\citationinfo}[1]{\titlepagefontsize\textbf{Citation: }#1 \\[\baselineskip]%
 % The end of title page is after the end of the citation info. We add a page break and return to the normal font size
